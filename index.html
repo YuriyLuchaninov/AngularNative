@@ -383,7 +383,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </div>
         </section>
         <section>
-            <h3><span class="warning">Потоки <span class="eng">!</span></span></h3>
+            <h3>Сила, брат в <span class="warning">потоках <span class="eng">!</span></span></h3>
             <img width="300" height="300" data-src="imgs/thread.png" alt="" class="noborder">
         </section>
         <section>
@@ -445,8 +445,8 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             <h3><span class="notify">просто неделя проекта</span></h3>
         </section>
         <section>
-            <h3><span class="eng">QA</span></h3>
-            <ul class="list-style" style="font-size: 32px;">
+            <h3><span class="eng">QA:</span> <span class="green">Отзывы</span></h3>
+            <ul class="list-style">
                 <li><span class="warning">-&#x9;Ломается практически любая кнопка, если успеть клацнуть back android девайса в момент анимации.</span>
                 </li>
                 <li><span class="warning">-&#x9;В текстовый инпут что-то ввести, расфокусировать его и снова тапнуть в него - курсор будет вначале введенного текста. Ожидаемо - в конце.</span>
@@ -456,11 +456,16 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers: </span><span class="warning">Трудности</span></h3>
-            <ul style="font-size: 32px;">
+            <ul>
                 <li>CLI: Не всегда с первого раза запускается эмулятор</li>
                 <li>При составлении структуры компонента из стандартных шаблонов разметки периодически выбрасывает из
                     эмулятора либо просто белый экран. Очень тяжело определить причину такого поведения.
                 </li>
+            </ul>
+        </section>
+        <section>
+            <h3><span class="eng">Developers: </span><span class="warning">Трудности</span></h3>
+            <ul>
                 <li>Нет стабильного инспектора для livesync, нет возможности смотреть разметку.</li>
                 <li>Нет возможности использования стандартных html элементов разметки. Стилизация готовых шаблонов
                     затрудняется невозможностью увидеть их базовые css свойства, соответственно иногда не получается
@@ -470,12 +475,17 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers: </span><span class="notify">Понравилось</span></h3>
-            <ul style="font-size: 32px;">
+            <ul>
                 <li>CLI</li>
                 <li>Наличие готовых анимаций</li>
                 <li>Наличие готовых универсальных элементов разметки, которые по разному отрисовываются в зависимости от
                     платформы, т.е один код для всех платформ.
                 </li>
+            </ul>
+        </section>
+        <section>
+            <h3><span class="eng">Developers: </span><span class="notify">Понравилось</span></h3>
+            <ul>
                 <li>довольно удобные layout containers. Можно быстро “набросать” простой дизайн.</li>
                 <li>есть возможность разработки сразу под две платформы - разделение и автоматический выбор файлов
                     (темплейтов, CSS) .android и .ios в зависимости от билда.
@@ -485,7 +495,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers:</span> <span class="warning">Не понравилось</span></h3>
-            <ul style="font-size: 32px;">
+            <ul>
                 <li>Менее удобно чем вебразработка.</li>
                 <li>Затруднена стилизация при наличии собственного дизайна.</li>
                 <li>Появление ошибок при нестыковке некоторых шаблонов разметки между собой.</li>
@@ -495,8 +505,8 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         <section>
             <h3>Сторонее мнение:</h3>
             <ul>
-                <li>почему плохие демки?</li>
-                <li>сплеш скрин?</li>
+                <li class="fragment">почему плохие демки?</li>
+                <li class="fragment">сплеш скрин?</li>
             </ul>
         </section>
         <section>
@@ -506,29 +516,44 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         <section>
             <h3>Выводы:</h3>
             <ul>
-                <li>Product Ready</li>
-                <li>Помните - это ДРУГИЕ ПЛАТФОРМЫ, вам придется изучить ее специфику</li>
-                <li>Асинхроность и веб веркеры</li>
-                <li>Не забывайте следить за официальными багами</li>
+                <li class="fragment"><span class="green">Product Ready</span></li>
+                <li class="fragment">Помните - это <span class="red">другие платформы</span>, вам придется <span
+                        class="red">изучить их специфику</span></li>
+                <li class="fragment"><span class="blue">Асинхроность != Потоки</span>, используйте веб воркеры</li>
+                <li class="fragment">Не забывайте следить за официальными багами</li>
             </ul>
         </section>
         <section>
             <h3>Пару ссылок</h3>
             <ul style="font-size: 24px">
                 <li><a href="http://www.nativescript.org/">http://www.nativescript.org/</a></li>
-                <li><a href="http://docs.nativescript.org/angular/start/introduction.html">http://docs.nativescript.org/angular/start/introduction.html</a></li>
+                <li><a href="http://docs.nativescript.org/angular/start/introduction.html">http://docs.nativescript.org/angular/start/introduction.html</a>
+                </li>
                 <li><a href="http://www.hybridtonative.com/">http://www.hybridtonative.com/</a></li>
-                <li><a href="http://nativescript.github.io/developer-day-workshop/">http://nativescript.github.io/developer-day-workshop/</a></li>
+                <li><a href="http://nativescript.github.io/developer-day-workshop/">http://nativescript.github.io/developer-day-workshop/</a>
+                </li>
                 <li><a href="http://www.nativescript.org/ctos-guide">http://www.nativescript.org/ctos-guide</a></li>
-                <li><a href="http://developer.telerik.com/featured/nativescript-a-technical-overview/">http://developer.telerik.com/featured/nativescript-a-technical-overview/</a></li>
-                <li><a href="http://developer.telerik.com/featured/nativescript-works/">http://developer.telerik.com/featured/nativescript-works/</a></li>
-                <li><a href="http://developer.telerik.com/featured/nativescript-android/">http://developer.telerik.com/featured/nativescript-android/</a></li>
-                <li><a href="http://github.com/NativeScript/sample-iOS-Profiling/tree/performance-tests">http://github.com/NativeScript/sample-iOS-Profiling/tree/performance-tests</a></li>
-                <li><a href="http://developer.telerik.com/featured/benefits-single-threading-model-nativescript/">http://developer.telerik.com/featured/benefits-single-threading-model-nativescript/</a></li>
-                <li><a href="http://www.quora.com/What-are-the-key-difference-between-ReactNative-and-NativeScript/answer/Valentin-Stoychev">http://www.quora.com/What-are-the-key-difference-between-ReactNative-and-NativeScript/answer/Valentin-Stoychev</a></li>
-                <li><a href="http://github.com/NativeScript/NativeScript/issues/1563">http://github.com/NativeScript/NativeScript/issues/1563</a></li>
-                <li><a href="http://medium.com/@enchev/extend-your-existing-android-app-with-angular-2-and-nativescript-56a4e1c72d6">http://medium.com/@enchev/extend-your-existing-android-app-with-angular-2-and-nativescript-56a4e1c72d6</a></li>
-                <li><a href="http://github.com/NativeScript/docs/blob/master/publishing/creating-launch-screens-android.md">http://github.com/NativeScript/docs/blob/master/publishing/creating-launch-screens-android.md</a></li>
+                <li><a href="http://developer.telerik.com/featured/nativescript-a-technical-overview/">http://developer.telerik.com/featured/nativescript-a-technical-overview/</a>
+                </li>
+                <li><a href="http://developer.telerik.com/featured/nativescript-works/">http://developer.telerik.com/featured/nativescript-works/</a>
+                </li>
+                <li><a href="http://developer.telerik.com/featured/nativescript-android/">http://developer.telerik.com/featured/nativescript-android/</a>
+                </li>
+                <li><a href="http://github.com/NativeScript/sample-iOS-Profiling/tree/performance-tests">http://github.com/NativeScript/sample-iOS-Profiling/tree/performance-tests</a>
+                </li>
+                <li><a href="http://developer.telerik.com/featured/benefits-single-threading-model-nativescript/">http://developer.telerik.com/featured/benefits-single-threading-model-nativescript/</a>
+                </li>
+                <li>
+                    <a href="http://www.quora.com/What-are-the-key-difference-between-ReactNative-and-NativeScript/answer/Valentin-Stoychev">http://www.quora.com/What-are-the-key-difference-between-ReactNative-and-NativeScript/answer/Valentin-Stoychev</a>
+                </li>
+                <li><a href="http://github.com/NativeScript/NativeScript/issues/1563">http://github.com/NativeScript/NativeScript/issues/1563</a>
+                </li>
+                <li>
+                    <a href="http://medium.com/@enchev/extend-your-existing-android-app-with-angular-2-and-nativescript-56a4e1c72d6">http://medium.com/@enchev/extend-your-existing-android-app-with-angular-2-and-nativescript-56a4e1c72d6</a>
+                </li>
+                <li>
+                    <a href="http://github.com/NativeScript/docs/blob/master/publishing/creating-launch-screens-android.md">http://github.com/NativeScript/docs/blob/master/publishing/creating-launch-screens-android.md</a>
+                </li>
             </ul>
         </section>
         <section>
