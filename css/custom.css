@@ -1,0 +1,27 @@
+.warning {
+    color: #ff5c02;
+}
+
+.notify {
+    color: #1a6091;
+}
+
+.reveal section img.noborder {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.custom-letter {
+    color: #000000;
+    font-size: 84px !important;
+}
+
+.reveal section .vertical-block {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.list-style li{
+    list-style-type: none;
+}
