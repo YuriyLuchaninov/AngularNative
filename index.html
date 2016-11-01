@@ -77,7 +77,7 @@
         </section>
         <section>
             <h3>Как это работает <span class="eng">?</span></h3>
-            <img width="670" height="600" data-src="imgs/what-is-hybrid.png" alt="" class="noborder">
+            <img width="600" height="530" data-src="imgs/what-is-hybrid.png" alt="" class="noborder">
         </section>
         <section>
             <h3>Как это работает <span class="eng">?</span></h3>
@@ -94,7 +94,10 @@
         </section>
         <section>
             <h3>Как это работает <span class="eng">?</span></h3>
-            <ul>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+var file = new java.io.File(path);
+            </code></pre>
+            <ul style="font-size: 32px;">
                 <li>The JavaScript VM evaluates the code</li>
                 <li>The Bindings will determine the corresponding native method to call</li>
                 <li>The Marshaling service will convert the JavaScript String to a java.lang.String object</li>
@@ -117,6 +120,9 @@ var context = ...;
 var button = new android.widget.Button(context);
 button.setText("My Button"); // "My Button" is converted to java.lang.String
             </code></pre>
+        </section>
+        <section>
+            <h3>Как это выглядит в коде <span class="eng">?</span></h3>
             <div>Пример из жизни:</div>
             <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
 var listView = this.page.getViewById("list_view");
@@ -132,7 +138,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3>Кроме:</h3>
-            <img width="530" height="310" data-src="imgs/mobile_layout.png" alt="" class="noborder vertical-block">
+            <img width="650" height="410" data-src="imgs/mobile_layout.png" alt="" class="noborder vertical-block">
         </section>
         <section>
             <h3>И волшебные постфиксы...</h3>
@@ -378,6 +384,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="warning">Потоки <span class="eng">!</span></span></h3>
+            <img width="300" height="300" data-src="imgs/thread.png" alt="" class="noborder">
         </section>
         <section>
             <h3>ReactNative</h3>
@@ -439,7 +446,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">QA</span></h3>
-            <ul class="list-style">
+            <ul class="list-style" style="font-size: 32px;">
                 <li><span class="warning">-&#x9;Ломается практически любая кнопка, если успеть клацнуть back android девайса в момент анимации.</span>
                 </li>
                 <li><span class="warning">-&#x9;В текстовый инпут что-то ввести, расфокусировать его и снова тапнуть в него - курсор будет вначале введенного текста. Ожидаемо - в конце.</span>
@@ -449,7 +456,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers: </span><span class="warning">Трудности</span></h3>
-            <ul>
+            <ul style="font-size: 32px;">
                 <li>CLI: Не всегда с первого раза запускается эмулятор</li>
                 <li>При составлении структуры компонента из стандартных шаблонов разметки периодически выбрасывает из
                     эмулятора либо просто белый экран. Очень тяжело определить причину такого поведения.
@@ -463,7 +470,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers: </span><span class="notify">Понравилось</span></h3>
-            <ul>
+            <ul style="font-size: 32px;">
                 <li>CLI</li>
                 <li>Наличие готовых анимаций</li>
                 <li>Наличие готовых универсальных элементов разметки, которые по разному отрисовываются в зависимости от
@@ -478,7 +485,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3><span class="eng">Developers:</span> <span class="warning">Не понравилось</span></h3>
-            <ul>
+            <ul style="font-size: 32px;">
                 <li>Менее удобно чем вебразработка.</li>
                 <li>Затруднена стилизация при наличии собственного дизайна.</li>
                 <li>Появление ошибок при нестыковке некоторых шаблонов разметки между собой.</li>
