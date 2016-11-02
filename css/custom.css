@@ -76,3 +76,7 @@ html body .reveal div{
 .light-bg {
     background-color: #f5f3f1;
 }
+
+pre {
+    width: 900px;
+}

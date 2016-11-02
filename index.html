@@ -94,7 +94,7 @@
         </section>
         <section>
             <h3>Как это работает <span class="eng">?</span></h3>
-            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 32px; line-height: 36px;">
 var file = new java.io.File(path);
             </code></pre>
             <ul style="font-size: 32px;">
@@ -110,7 +110,7 @@ var file = new java.io.File(path);
         <section>
             <h3>Как это выглядит в коде <span class="eng">?</span></h3>
             <div>Пример из документации:</div>
-            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 32px; line-height: 36px;">
 // iOS
 var array = new NSMutableArray();
 array.addObject(new NSObject());
@@ -118,17 +118,20 @@ array.addObject(new NSObject());
 // Android
 var context = ...;
 var button = new android.widget.Button(context);
-button.setText("My Button"); // "My Button" is converted to java.lang.String
+// "My Button" is converted to java.lang.String
+button.setText("My Button");
             </code></pre>
         </section>
         <section>
             <h3>Как это выглядит в коде <span class="eng">?</span></h3>
             <div>Пример из жизни:</div>
-            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 32px; line-height: 36px;">
 var listView = this.page.getViewById("list_view");
 listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
-    if (args.ios) { // disable select colors if it iOS
-        args.ios.selectionStyle = UITableViewCellSelectionStyle.UITableViewCellSelectStyleNone;
+    // disable select colors if it iOS
+    if (args.ios) {
+        args.ios.selectionStyle =
+                UITableViewCellSelectionStyle.UITableViewCellSelectStyleNone;
     }
 });</code></pre>
         </section>
@@ -434,7 +437,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
                 <li class="fragment">Работа с андроид виджетами</li>
                 <li class="fragment">Тесты с Mocha.js и Appium</li>
                 <li class="fragment">Universal Windows Platform</li>
-                <li class="fragment">Телерик Апп Билдер</li>
+                <li class="fragment">Telerik App Builder</li>
                 <li class="fragment">WebInspector & NodeInspector for debugging</li>
                 <li class="fragment">Default Theme</li>
                 <li class="fragment">v.2.4</li>
@@ -450,7 +453,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             <ul class="list-style">
                 <li><span class="warning">-&#x9;Ломается практически любая кнопка, если успеть клацнуть back android девайса в момент анимации.</span>
                 </li>
-                <li><span class="warning">-&#x9;В текстовый инпут что-то ввести, расфокусировать его и снова тапнуть в него - курсор будет вначале введенного текста. Ожидаемо - в конце.</span>
+                <li><span class="warning">-&#x9;В текстовый инпут что-то ввести, расфокусировать его и снова тапнуть в него - курсор будет в начале введенного текста. Ожидаемо - в конце.</span>
                 </li>
                 <li><span class="notify">+&#x9;Список из 3000 объектов резво крутится ;-)</span></li>
             </ul>
