@@ -56,7 +56,7 @@
 
         <section>
             <h2>Что такое <span class="eng">NativeScript?</span></h2>
-            <h3><span class="notify">Идея: Пишем на <span class="eng">JS</span> нативные приложения</span></h3>
+            <h3><span class="notify">Идея: Пишем нативные приложения на <span class="eng">JS</span></span></h3>
             <div style="position:relative">
                 <p class="fragment fade-in"
                    style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
@@ -98,13 +98,13 @@
 var file = new java.io.File(path);
             </code></pre>
             <ul style="font-size: 32px;">
-                <li>The JavaScript VM evaluates the code</li>
-                <li>The Bindings will determine the corresponding native method to call</li>
-                <li>The Marshaling service will convert the JavaScript String to a java.lang.String object</li>
-                <li>The result of the function call will be a custom JavaScript Object serving as a proxy to the native
-                    java.io.File object created on the Android side. When a method is called on this proxy it is
-                    delegated to the underlying native object instance.
-                </li>
+                <li>Виртуальная машина JavaScript оценивает код</li>
+                <li>Биндинг определяет соответствующие нативные методы вызова</li>
+                <li>Сервис передачи преобразует строку JavaScript в объект java.lang.String</li>
+                <li>Результатом вызова функции будет кастомный объект JavaScript,
+                    служащий в качестве прокси для нативного объекта java.io.File,
+                    созданного на стороне Андроида. Когда метод вызван для этого прокси,
+                    он делегируется лежащему в основе инстансу нативного объекта.</li>
             </ul>
         </section>
         <section>
@@ -164,8 +164,8 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </ul>
         </section>
         <section>
-            <h3>Startup Time</h3>
-            <div class="green">Blank app with a single button.</div>
+            <h3>Время запуска</h3>
+            <div class="green">Пустое приложение с одной кнопкой.</div>
             <table>
                 <thead>
                 <tr>
@@ -210,10 +210,9 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </table>
         </section>
         <section>
-            <h3>Primitives</h3>
-            <div class="green">The marshaling of numbers between JavaScript and native. It is for 1 000 000 calls to
-                native code.
-            </div>
+            <h3>Примитивы</h3>
+            <div class="green">Передача чисел от JavaScript к нативной части.
+                Данные приведены для 1 000 000 вызовов нативного кода.</div>
             <table>
                 <thead>
                 <tr>
@@ -264,10 +263,9 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </table>
         </section>
         <section>
-            <h3>Strings</h3>
-            <div class="green">The marshaling of strings between JavaScript and native. It is for 100 000 calls to
-                native code.
-            </div>
+            <h3>Строки</h3>
+            <div class="green">Передача строк от JavaScript к нативной части.
+                Данные приведены для 1 000 000 вызовов нативного кода.</div>
             <table>
                 <thead>
                 <tr>
@@ -318,10 +316,9 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </table>
         </section>
         <section>
-            <h3>Big Data</h3>
-            <div class="green">The marshaling of an array with 65 536 elements between JavaScript and native. It is for
-                200 calls to native code.
-            </div>
+            <h3>Большие объёмы данных</h3>
+            <div class="green">Передача массива из 65 536 элементов от JavaScript к нативной части.
+                Данные приведены для 200 вызовов нативного кода.</div>
             <table>
                 <thead>
                 <tr>
@@ -373,7 +370,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <div style="position:relative; height: 750px">
-                <h3>Вся правда о нативном перформансе</h3>
+                <h3>Вся правда о нативной производительности</h3>
                 <p class="fragment fade-in"
                    style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
                    data-fragment-index="0">
@@ -537,7 +534,7 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             </ul>
         </section>
         <section>
-            <h3>Пару ссылок</h3>
+            <h3>Несколько полезных ссылок</h3>
             <ul style="font-size: 24px">
                 <li><a href="http://www.nativescript.org/">http://www.nativescript.org/</a></li>
                 <li><a href="http://docs.nativescript.org/angular/start/introduction.html">http://docs.nativescript.org/angular/start/introduction.html</a>
