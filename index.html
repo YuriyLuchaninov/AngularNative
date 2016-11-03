@@ -418,28 +418,26 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         </section>
         <section>
             <h3>ES6</h3>
-            <div>Generally speaking, NativeScript tries to use the latest stable releases of both V8 and JavaScriptCore;
-                therefore the ECMAScript language support in NativeScript for iOS is nearly identical to the support in
-                desktop Safari, and the support in NativeScript for Android is nearly identical to the support in
-                desktop Chrome.
-            </div>
+            <div>В общем и целом, NativeScript использует последние стабильные релизные версии V8 и JavaScriptCore.
+                Поэтому поддержка языка ECMAScript в NativeScript для iOS практически идентична поддержке для
+                десктопного Safari, а поддержка в NativeScript для Android – для десктопного Chrome.</div>
         </section>
         <section>
-            <h3>Upgrading Hybrid Apps to Native with NativeScript</h3>
+            <h3>Переделываем гибридные приложения в нативные с помощью <span class="eng">NativeScript</span></h3>
             <img width="360" height="360" data-src="imgs/qr-native.gif" alt="" class="noborder vertical-block">
         </section>
         <section>
             <h3>И еще много чего...</h3>
             <ul>
-                <li class="fragment">Расширение существующих апп</li>
-                <li class="fragment">С++ native modules are similar to Node.js addons</li>
+                <li class="fragment">Расширение существующих нативных приложений</li>
+                <li class="fragment">Нативные модули на С++ аналогичны адд-онам Node.js</li>
                 <li class="fragment">Node.JS API к концу года</li>
-                <li class="fragment">Работа с андроид виджетами</li>
-                <li class="fragment">Тесты с Mocha.js и Appium</li>
+                <li class="fragment">Работа с Андроид-виджетами</li>
+                <li class="fragment">Тесты с Mocha.js, Appium и т.д.</li>
                 <li class="fragment">Universal Windows Platform</li>
                 <li class="fragment">Telerik App Builder</li>
                 <li class="fragment">WebInspector & NodeInspector for debugging</li>
-                <li class="fragment">Default Theme</li>
+                <li class="fragment">Default Themes</li>
                 <li class="fragment">v.2.4</li>
             </ul>
         </section>
@@ -451,66 +449,66 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
         <section>
             <h3><span class="eng">QA:</span> <span class="green">Отзывы</span></h3>
             <ul class="list-style">
-                <li><span class="warning">-&#x9;Ломается практически любая кнопка, если успеть клацнуть back android девайса в момент анимации.</span>
+                <li><span class="warning">-&#x9;Ломается практически любая кнопка, если успеть нажать на "back" на Андроид-девайсе в момент анимации.</span>
                 </li>
-                <li><span class="warning">-&#x9;В текстовый инпут что-то ввести, расфокусировать его и снова тапнуть в него - курсор будет в начале введенного текста. Ожидаемо - в конце.</span>
+                <li><span class="warning">-&#x9;Ввести что-либо в текстовое поле, расфокусировать его и снова тапнуть по нему – курсор будет в начале введенного текста. Ожидаемо – в конце.</span>
                 </li>
                 <li><span class="notify">+&#x9;Список из 3000 объектов резво крутится ;-)</span></li>
             </ul>
         </section>
         <section>
-            <h3><span class="eng">Developers: </span><span class="warning">Трудности</span></h3>
+            <h3>Разработчики: <span class="warning">Трудности</span></h3>
             <ul>
-                <li>CLI: Не всегда с первого раза запускается эмулятор</li>
-                <li>При составлении структуры компонента из стандартных шаблонов разметки периодически выбрасывает из
-                    эмулятора либо просто белый экран. Очень тяжело определить причину такого поведения.
-                </li>
+                <li>CLI: Не всегда с первого раза запускается эмулятор.</li>
+                <li>При составлении структуры компонента из стандартных шаблонов разметки периодически
+                    выбрасывает из эмулятора, либо просто выдаёт белый экран. Очень тяжело определить
+                    причину такого поведения.</li>
             </ul>
         </section>
         <section>
-            <h3><span class="eng">Developers: </span><span class="warning">Трудности</span></h3>
+            <h3>Разработчики: <span class="warning">Трудности</span></h3>
             <ul>
                 <li>Нет стабильного инспектора для livesync, нет возможности смотреть разметку.</li>
-                <li>Нет возможности использования стандартных html элементов разметки. Стилизация готовых шаблонов
-                    затрудняется невозможностью увидеть их базовые css свойства, соответственно иногда не получается
-                    перебить некоторые свойства.
+                <li>Нет возможности использования стандартных html-элементов разметки. Стилизация
+                    готовых шаблонов затрудняется невозможностью увидеть их базовые CSS-свойства.
+                    Соответственно, иногда не получается перебить некоторые свойства.
                 </li>
             </ul>
         </section>
         <section>
-            <h3><span class="eng">Developers: </span><span class="notify">Понравилось</span></h3>
+            <h3>Разработчики: <span class="notify">Понравилось</span></h3>
             <ul>
-                <li>CLI</li>
-                <li>Наличие готовых анимаций</li>
-                <li>Наличие готовых универсальных элементов разметки, которые по-разному отрисовываются в зависимости от
-                    платформы, т.е. один код для всех платформ.
+                <li>CLI.</li>
+                <li>Наличие готовых анимаций.</li>
+                <li>Наличие готовых универсальных элементов разметки, которые по разному отрисовываются
+                    в зависимости от платформы (т.е., один код для всех платформ).
                 </li>
             </ul>
         </section>
         <section>
-            <h3><span class="eng">Developers: </span><span class="notify">Понравилось</span></h3>
+            <h3>Разработчики: <span class="notify">Понравилось</span></h3>
             <ul>
-                <li>Довольно удобные layout containers. Можно быстро “набросать” простой дизайн.</li>
-                <li>Есть возможность разработки сразу под две платформы - разделение и автоматический выбор файлов
-                    (темплейтов, CSS) .android и .ios в зависимости от билда.
+                <li>Довольно удобные layout containers. Можно быстро "набросать" простой дизайн.</li>
+                <li>Есть возможность разработки сразу под две платформы – разделение и автоматический
+                    выбор файлов (темплейтов, CSS) .android и .ios, в зависимости от билда.
                 </li>
-                <li>Связка angular2 + rxjs , как гибкое средство для асинхронных операций.</li>
+                <li>Связка Angular 2 + RxJS как гибкое средство для асинхронных операций.</li>
             </ul>
         </section>
         <section>
-            <h3><span class="eng">Developers:</span> <span class="warning">Не понравилось</span></h3>
+            <h3>Разработчики: <span class="warning">Не понравилось</span></h3>
             <ul>
-                <li>Менее удобно чем вебразработка.</li>
+                <li>Менее удобно, чем веб-разработка.</li>
                 <li>Затруднена стилизация при наличии собственного дизайна.</li>
                 <li>Появление ошибок при нестыковке некоторых шаблонов разметки между собой.</li>
-                <li>Для быстрой и качественной разработки необходимо знать тонкости Angular2 и нативной платформы</li>
+                <li>Для быстрой и качественной разработки необходимо знать тонкости Angular 2 и нативной платформы.</li>
             </ul>
         </section>
         <section>
             <h3>Стороннее мнение:</h3>
             <ul>
-                <li class="fragment">почему плохие демки?</li>
-                <li class="fragment">сплеш скрин?</li>
+                <li class="fragment">Почему демки плохие?</li>
+                <li class="fragment">Сплэш-скрин?</li>
             </ul>
         </section>
         <section>
@@ -530,10 +528,9 @@ listView.on(ListView.itemLoadingEvent, (args: ItemEventData)=> {
             <h3>Выводы:</h3>
             <ul>
                 <li class="fragment"><span class="green">Product Ready</span></li>
-                <li class="fragment">Помните - это <span class="red">другие платформы</span>, вам придется <span
-                        class="red">изучить их специфику</span></li>
-                <li class="fragment"><span class="blue">Асинхронность != Потоки</span>, используйте веб воркеры</li>
-                <li class="fragment">Не забывайте следить за официальными багами</li>
+                <li class="fragment">Помните – это <span class="red">другие платформы</span>, Вам придется <span class="red">изучить их специфику!</span></li>
+                <li class="fragment"><span class="blue">Асинхронность != потоки</span>, используйте Web Workers.</li>
+                <li class="fragment">Не забывайте следить за официальными багами!</li>
             </ul>
         </section>
         <section>
